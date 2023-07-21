@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Năm Nhuận</title>
+</head>
+<body>
+<input type="text" id="year" placeholder="Nhập Năm">
+<button onclick="result()">Kiểm Tra</button>
+<p id="result"></p>
+<script>
+    function result() {
+        let year = +document.getElementById('year').value;
+        if (year % 4 == 0 && year % 100 != 0) {
+            document.getElementById('result').innerHTML = "Result: Năm nhuận"
+        } else if (year%100==0 && year%400==0) {
+            document.getElementById('result').innerHTML = "Result: Năm nhuận"
+
+        } else {
+            document.getElementById('result').innerHTML = "Result: Năm không nhuận"
+        }
+    }
+</script>
+</body>
+</html>
